@@ -17,3 +17,18 @@ def q4(request):
 
 def q5(request):
     return render(request, 'questions/5.html')
+
+def q6(request):
+    return render(request, 'questions/6.html')
+
+def q7(request):
+    return render(request, 'questions/7.html')
+
+def q8(request):
+    return render(request, 'questions/8.html')
+
+def q9(request):
+    return render(request, 'questions/9.html')
+
+def q10(request):
+    return render(request, 'questions/10.html')
