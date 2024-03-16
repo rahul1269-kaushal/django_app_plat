@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Ouestion 8: A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about your decision making process after the reply.</h1>
+    <p>Answers.</p>
+    <p>  
+        Hello [Customer Name],
+        
+        I appreciate you reaching out to Vercel.
+        
+        I understand that you're concerned about your deployment being indexed by search engines. By default, Vercel Preview Deployments are not indexed by search engines because the X-Robots-Tag HTTP header is set to "noindex." However, it's worth noting that if you're using a Custom Domain assigned to a non-Production Branch, the X-Robots-Tag header will not be set to "noindex."
+        
+        To verify the value for the X-Robots-Tag header, you can use the command: curl -I <preview-deployment-url>. This command will provide the output of the API call, showing you the header value. If it's not set to "noindex," you can modify it by injecting the response header using your framework's built-in methods.
+        
+        For further insights on indexing and how Vercel Preview Deployments are handled by search engines, you may find this article helpful: https://vercel.com/guides/are-vercel-preview-deployment-indexed-by-search-engines.
+        
+        Please feel free to let me know if you have any more questions or concerns. I'm here to assist you. </p>
+    <p> </p>
+
+</body>
+</html>

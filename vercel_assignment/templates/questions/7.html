@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Questions 7: A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog path to https://example.com?" Please write a reply to the customer. Feel free to add any information about your decision making process after the reply</h1>
+    <p>Answers.</p>
+    <p> Hello [Customer Name],
+
+        Thank you for reaching out to Vercel.
+        
+        I understand that you're looking to redirect incoming requests from the "/blog" path to your domain https://example.com. For such a scenario, you can utilize our Edge middleware feature. To implement this, you'll need to modify the middleware.ts or .js file in your project's root directory.
+        
+        You can use a matcher to identify incoming requests with the "/blog" path. For more detailed information on setting up matchers, please refer to the documentation available here: https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher.
+        
+        Once the matchers are configured, you can utilize the nextResponse API to perform the redirection to your desired domain. For guidance on implementing redirection using the nextResponse API, please consult the documentation provided here: https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher.
+        
+        Please don't hesitate to reach out if you have any further questions or concerns. I'm here to help. </p>
+
+</body>
+</html>
