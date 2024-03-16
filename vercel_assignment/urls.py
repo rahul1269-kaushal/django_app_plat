@@ -23,4 +23,7 @@ urlpatterns = [
     path('', views.home),
     path('1/', views.q1),
     path('2/', views.q2),
+    path('3/', views.q3),
+    path('4/', views.q4),
+    path('5/', views.q5),
 ]
