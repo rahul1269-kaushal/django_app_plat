@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Ouestions 4: When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?</h1>
+    <p>Answers.</p>
+    <p>    </p>
+    <p>Edge Functions are ideal when we need to execute lightweight, fast, and globally distributed code.  For example if want to small applications using a reactjs. I can use Edge Functions to modifying HTTP requests and responses. CDN comes in handy as it cache the app data and can used faster retrieval.</p>
+    <p>    </P>
+    <p>Serverless Functions are useful for executing backend logic or API endpoints in response to HTTP requests. However, they may have slightly higher latency compared to Edge Functions as serverless need to be executed inside the cloud infra. These are typically useful in event driven load. For example a web application where users can upload images, and you need to perform image processing tasks such as resizing and uploading. So you can make a API call to Serverless function when user uploads the image. Our function takes the image. resize as per algorithm set by us and upload it to S3 bucket or any other cloud block storage.</p>
+    <p>   </p>
+    <p>Edge Middleware allows us to modify incoming HTTP requests and outgoing responses at the edge of Vercel's network. This will provide more control over  traffic and can be used to augment the capabilities of Edge Functions and Serverless Functions. For example I want test out a new version of my function. I can change the route of the specific ingress request  and route them to the newer version for testing and later route all the traffic. When the version is production ready.</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Questions 3: Describe how you solved a challenge or technical issue that you faced in a previous role preferably in a previous support role. How did you determine that your solution was successful </h1>
+    <p>Answers.</p>
+    <p> Recently I faced an issue with a new enterprise customer trying to do a POC for digitalocean kubenrtes cluster. They were facing an issue with the cluster pods going out of memory. On further investigation we found out the pods where going failing with an error code 137. Which indicated us the reason for pod termination was container requesting for more memory than set in the container manifest. On which customer expalined they set that limit that, as there pods were failing to connect to there Redis service. We matched the timestamps for the pod failure with the resource usuage on Redis service and found the Redis service was using High CPU when the pods starting failing. We increased the disk and CPU size for the redis service cluster and it was able to handle the high ingress stress test without any issues.</p>
+    <p>    </p>
+    <p>In another scenario on DigitalOcean App Platform. I had one of our VIP customers facing an issue with there production apps failing to build intermittently. However, when they force deploy it the app gets builds successfully. As the impacted apps where in production they have to force deploy it everytime to minimize downtime. Causing a issue, not having a impacted continer for troublshooting. I asked customer to give access to me of the git hub repo. Which I wasl luckly able to get. I deployed the app in my test account and found the apps only fails after multiple builds have been done. Which pointed me that they might be using a build cache to make the buils faster. However, over time the cache fills and pass our platform limit of 8 GB. Thats when the apps starts to fails and the reason force deploy fixed it, as it clears the build cache. I used our engineers helps to find out it I was correct and indeed i was. We then with engineers help changed the caching technique they were using and were able to fix the issue. </p>
+    
+</body>
+</html>
